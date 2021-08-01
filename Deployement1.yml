@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    name: myapp
+    type: front-end
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      type: front-end
+  template:
+    metadata:
+      name: pod
+      labels:
+        name: myapp
+        type: front-end
+    spec:
+     containers:
+       - name: redis
+         image: redis
