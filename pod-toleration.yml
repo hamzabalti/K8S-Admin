@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: pod-tolerent
+    type: pod-tolerent
+  name: pod-tolerent
+spec:
+  containers:
+    - image: alpine
+      name: alpine
+  tolerations:
+    
+    - key: "app"
+      operator: "Equal"
+      value: "blue"
+      effect: "NoSchedule"
+
+

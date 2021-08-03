@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  labels: 
+    name: pod-selector-node
+    type: pod-selector-node
+  name: pod-selector-node
+spec: 
+  containers: 
+    - 
+      image: alpine
+      name: alpine
+  nodeSelector: 
+    size: Large
+

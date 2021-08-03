@@ -1,0 +1,24 @@
+--- 
+apiVersion: apps/v1
+kind: DaemonSet
+metadata: 
+  labels: 
+    name: deamonset-pod
+    type: back-end
+  name: deamonset-pods
+spec: 
+  selector: 
+    matchLabels: 
+      type: back-end
+  template: 
+    metadata: 
+      labels: 
+        name: deamonset-pod
+        type: back-end
+      name: pod-nginx1
+    spec: 
+      containers: 
+        - 
+          image: nginx
+          name: nginx
+

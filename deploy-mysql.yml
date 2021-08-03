@@ -1,0 +1,25 @@
+--- 
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  labels: 
+    name: dep1
+    type: dep1
+  name: dep
+spec: 
+  replicas: 2
+  selector: 
+    matchLabels: 
+      type: dep1
+  template: 
+    metadata: 
+      labels: 
+        name: myapp1
+        type: dep1
+      name: pod1
+    spec: 
+      containers: 
+        - 
+          image: mysql
+          name: mysql
+
