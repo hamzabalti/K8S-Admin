@@ -19,4 +19,4 @@ spec:
     spec:
      containers:
        - name: redis
-         image: redis
+         image: redis:5.0.13

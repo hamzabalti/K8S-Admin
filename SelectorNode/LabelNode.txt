@@ -1,3 +1,8 @@
 kubectl label nodes node-name size=(Large-Medium)
+#########
+To create new schedular make a copy file of /etc/kubernetes/manifests/kube-scheduler.yml
+#########
+kubectl get events --> (show all events that happens pulling , scheduling..)
 
+kubectl get logs scheduler-name --namespace=kube-system -->(show all logs related to scheduler) 
 

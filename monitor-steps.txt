@@ -1,0 +1,19 @@
+#################
+To monitor pod and node performance we use a monitoring solution:
+
+we will use "metrics servers"
+
+1) Add addon to minikube:
+
+    minikube addons enable metrics-server
+
+2) wait times to collect info and then :
+   
+   kubectl top node
+   
+   kubectl top pod
+
+###############################################################
+To View Logs of pods:
+
+kubectl logs pod-nginx

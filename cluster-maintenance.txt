@@ -1,0 +1,16 @@
+########
+When the cluster is in danger and you have some nodes are not safe you can move all pods there to another node in the cluster commande:
+
+kubectl drain name-node
+
+########
+
+when you need to make a node not scheduled so use commande:
+
+kubectl cordon name-node
+
+########
+
+Retrun the node to be scheduled so use commande:
+
+kubectl uncordon name-node

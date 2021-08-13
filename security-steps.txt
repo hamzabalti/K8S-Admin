@@ -1,0 +1,11 @@
+########
+
+To secure our cluster we must focus first on apiversion because it's responsible of all communication between components.
+
+-- we must specify authentication (who can acces).
+-- we must specify authorization (what can he do).
+
+-- tls certification between communication of components.
+
+
+-- network policies between pods

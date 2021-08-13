@@ -1,0 +1,18 @@
+##########
+
+ConfigMaps used if we have a envirenement in our application so we must create config-maps and then inject it into pod-file:
+
+##########
+To see all configmaps:
+
+kubectl get configmaps
+
+#########
+
+Secret is used if we have a envirenement in our application must be crypted and secret and then inject it into pod-file:
+
+#########
+
+To see all secrets:
+
+kubectl get secrets

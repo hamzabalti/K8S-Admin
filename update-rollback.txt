@@ -1,0 +1,19 @@
+##########
+
+-To make a deployement used us a updates or rolleback must make it in rollout by commande:
+
+kubectl rollout status deployment/nom-deployement
+
+
+##########
+
+-To make update new version change the file of deployment and then use commande:
+
+kubectl apply -f nom-deployment-file 
+
+##########
+
+-To return to the older version or config use commande :
+
+kubectl rollout undo deployment/nom-deployement
+

@@ -1,0 +1,5 @@
+Ingress used to help us avoid all the types of configuration to let our application in production waste a time for the (load-balancer,expose ports or ssl configuration )
+
+So Ingress solution let us make it easy :D 
+
+Solution likes (Nginx,HAproxy..)
